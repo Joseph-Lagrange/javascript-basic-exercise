@@ -29,7 +29,7 @@ export function sum(...numbers) {
   //
   // * Please implement this function and pass all the tests in range_and_array_spec.js.
   // * Please do NOT modify the signature of the function.
-    if (numbers.length == 0) {
+    if (!numbers.length) {
       return 0;
     }
     if (numbers.length == 1) {
