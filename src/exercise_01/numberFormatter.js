@@ -7,6 +7,12 @@ export default function formatNumber(number, option) {
   //
   // * Please implement the function and pass all the tests in format_number_spec.js.
   // * Please do NOT modify the signature of the function.
-
-  throw new Error('Please delete this line and implement the function');
+  if (isNaN(number)) {
+    return;
+  }
+  number = number.toFixed(2);
+  if (option != undefined) {
+    return '$ ' + number;
+  }
+  return number;
 }
